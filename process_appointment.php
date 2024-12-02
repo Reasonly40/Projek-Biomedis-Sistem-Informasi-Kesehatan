@@ -1,4 +1,8 @@
 <?php
+// Sambungkan ke database
+include 'dbconn.php'; // Pastikan ada file yang mengatur koneksi database
+$conn = openConnection();
+
 // Proses data dari formulir
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ambil data dari formulir
