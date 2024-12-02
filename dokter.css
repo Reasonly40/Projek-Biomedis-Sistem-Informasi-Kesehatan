@@ -1,0 +1,267 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #053669;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header .navbar a:hover {
+  color: #f0c419;
+}
+
+header .navbar .btn {
+  background-color: #f0c419;
+  color: #053669;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header .navbar .btn:hover {
+  background-color: white;
+  color: #053669;
+}
+
+/* Section Styling */
+#DokterDetail {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.dokter-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dokter-heading h3 {
+  font-size: 2rem;
+  color: #053669;
+}
+
+.dokter-heading p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.dokter-detail-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.dokter-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dokter-detail-text {
+  flex: 1;
+}
+
+.dokter-detail-text h4 {
+  font-size: 1.5rem;
+  color: #053669;
+  margin-bottom: 1rem;
+}
+
+.dokter-detail-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dokter-detail-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dokter-detail-text ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.dokter-detail-text ul li::before {
+  content: "•";
+  color: #053669;
+  margin-right: 0.5rem;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead {
+  background-color: #053669;
+  color: white;
+}
+
+thead th {
+  text-align: left;
+  padding: 0.8rem;
+}
+
+tbody td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Back Button */
+.dokter-back {
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* Tambahkan jarak bawah */
+  text-align: center;
+}
+
+.dokter-back .btn {
+  background-color: #053669;
+  color: white;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.dokter-back .btn:hover {
+  background-color: #f0c419;
+  color: #053669;
+}
+
+
+* Footer Styling */
+footer {
+  background-color: #053669;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding: 40px 20px;
+}
+
+/* Footer Box */
+.footer-box {
+  background-color: rgba(43, 129, 194, 0.973);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Grid Layout for Footer Content */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo-info a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-logo-info span {
+  background-color: deepskyblue;
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer-logo {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.footer-contact i {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #023a76;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #023a76;
+}
+
