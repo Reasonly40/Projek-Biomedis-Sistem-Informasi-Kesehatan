@@ -1,16 +1,6 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "antrian";
-
-// Buat koneksi ke database
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
+// Sambungkan ke database
+include 'dbconn.php'; // Pastikan ada file yang mengatur koneksi database
+$conn = openConnection();
 
 // Handle pengambilan nomor antrian
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
