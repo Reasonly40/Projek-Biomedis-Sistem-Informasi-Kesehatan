@@ -1,76 +1,112 @@
-/* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
   font-family: "Rubik", sans-serif;
 }
 
-/* Header Styling */
 header {
-  background-color: #053669;
-  color: white;
-  padding: 1rem 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 7%;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: #053669;
 }
 
-header .logo {
+.logo {
+  width: 150px;
   display: flex;
   align-items: center;
 }
-
-header .logo img {
-  height: 50px;
-  margin-right: 10px;
+.logo img {
+  width: 55%;
 }
 
-header .navbar a {
+.logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
   color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
 }
 
-header .navbar a:hover {
-  color: #f0c419;
-}
-
-header .navbar .btn {
-  background-color: #f0c419;
-  color: #053669;
-  padding: 0.5rem 1rem;
+.logo span {
+  background-color: rgb(18, 117, 51);
+  padding: 0px 5px;
+  color: white;
   border-radius: 5px;
   font-weight: bold;
-  text-decoration: none;
 }
 
-header .navbar .btn:hover {
+.navbar {
+  align-items: center;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.849);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem;
+  position: relative;
+  transition: 0.5s;
+}
+.navbar a:hover {
+  color: #f9fdff;
+}
+
+.navbar a::after {
+  content: "";
   background-color: white;
-  color: #053669;
+  width: 0;
+  position: absolute;
+  height: 0.2rem;
+  left: 0;
+  margin-top: 0.5rem;
+  top: 100%;
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  width: 100%;
 }
 
 /* Section Styling */
 #DokterDetail {
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 .dokter-heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.dokter-heading h3 {
-  font-size: 2rem;
-  color: #053669;
+.dokter-heading h1 {
+  font-size: 1.5rem;
+  color: #fafcfd;
+  background-color: #053669;
+  border-radius: 50px;
+  width: 35%;
+  padding: 10px;
+  text-align: center; /* Teks berada di tengah horizontal */
+  display: flex; /* Aktifkan flexbox */
+  justify-content: center; /* Teks berada di tengah horizontal */
+  align-items: center; /* Teks berada di tengah vertikal */
+  margin: 0 auto; /* Elemen h1 berada di tengah halaman */
 }
 
 .dokter-heading p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
@@ -90,36 +126,29 @@ header .navbar .btn:hover {
   flex: 1;
 }
 
-.dokter-detail-text h4 {
+.dokter-detail-text h2 {
   font-size: 1.5rem;
   color: #053669;
-  margin-bottom: 1rem;
+  margin-top: 1.2rem;
 }
 
 .dokter-detail-text p {
   font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.dokter-detail-text ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.dokter-detail-text ul li {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-  display: flex;
-  align-items: center;
-}
-
-.dokter-detail-text ul li::before {
-  content: "•";
+.dokter-detail-text h4 {
+  font-size: 1.5rem;
   color: #053669;
-  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.dokter-detail-text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333;
 }
 
 /* Table Styling */
@@ -152,116 +181,43 @@ tbody tr:hover {
   background-color: #f1f1f1;
 }
 
-/* Back Button */
-.dokter-back {
-  margin-top: 2rem;
-  margin-bottom: 3rem; /* Tambahkan jarak bawah */
-  text-align: center;
-}
-
-.dokter-back .btn {
-  background-color: #053669;
-  color: white;
-  padding: 0.7rem 2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.dokter-back .btn:hover {
-  background-color: #f0c419;
-  color: #053669;
-}
-
-
-* Footer Styling */
-footer {
-  background-color: #053669;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  padding: 40px 20px;
-}
-
-/* Footer Box */
-.footer-box {
-  background-color: rgba(43, 129, 194, 0.973);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* Grid Layout for Footer Content */
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  text-align: center;
-}
-
-.footer-logo-info a {
-  font-weight: 700;
-  font-size: 1rem;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.footer-logo-info span {
-  background-color: deepskyblue;
-  padding: 0px 5px;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.footer-logo {
-  vertical-align: middle;
-  margin-right: 5px;
-  width: 50px;
-}
-
-.footer-contact {
+.Home-btn {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-}
-.footer-contact p {
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: justify;
 }
 
-.footer-contact i {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  color: #023a76;
+.Home-btn a {
+  height: 45px;
+  padding: 0px 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: rgb(18, 117, 51);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-/* Footer Bottom Section */
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
+.Home-btn a i {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(171, 237, 193);
+  margin-right: 8px;
+  font-size: 0.5rem;
+  padding-bottom: 1px;
+  color: black;
 }
 
-.footer-bottom p {
-  margin: 0;
-  font-size: 14px;
+.Home-btn a:hover {
+  background-color: rgb(5, 44, 18);
 }
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  color: white;
-  margin: 0 10px;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #023a76;
-}
-
