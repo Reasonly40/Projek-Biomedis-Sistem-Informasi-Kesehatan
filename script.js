@@ -35,3 +35,10 @@ var swiper = new Swiper(".mySwiperdokter", {
     },
   },
 });
+
+function showLoginMessage(event) {
+  event.preventDefault(); // Mencegah perpindahan halaman
+  const messageBox = document.getElementById("login-message");
+  messageBox.style.display = "block";
+}
+
